@@ -1,0 +1,24 @@
+{
+  "name": "my-students",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "node -e \"require('fs').mkdirSync('dist', { recursive: true });\"",
+    "dev": "node index.js",       
+    "start": "node dist/index.js",
+    "build": "npm run prestart && node scripts/build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "ncp": "^2.0.0"
+  }
+}

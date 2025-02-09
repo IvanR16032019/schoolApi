@@ -1,0 +1,40 @@
+###Obtener todos los estudiantes
+GET http://localhost:3000/students
+Content-Type: application/json
+
+
+###Obtener un estudiante por ID
+GET http://localhost:3000/students/209131
+Content-Type: application/json
+
+
+###Agregar un nuevo estudiante
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "name": "Andres Yunior",
+  "lastname": "Rodriguez",
+  "age": 26,
+  "email": "yunior@email.com",
+  "phone_number": 8765432345
+}
+
+
+###Editar un estudiante por ID
+PUT http://localhost:3000/students/464917
+Content-Type: application/json
+
+{
+  "id": "464917",
+  "name": "Andres Y",
+  "lastname": "Rodriguez",
+  "age": 26,
+  "email": "yunior@email.com",
+  "phone_number": "8765432345"
+}
+
+
+###Eliminar un estudiante por ID
+DELETE http://localhost:3000/students/464917
+Content-Type: application/json
