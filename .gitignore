@@ -10,5 +10,3 @@ logs/
 
 # Build
 dist/
-.gitignore
-scripts/
