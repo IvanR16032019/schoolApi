@@ -10,3 +10,4 @@ logs/
 
 # Build
 dist/
+.gitignore
